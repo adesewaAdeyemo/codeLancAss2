@@ -36,3 +36,8 @@ button.no-color{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.pride{
+    background-image: url(./images/pride.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
