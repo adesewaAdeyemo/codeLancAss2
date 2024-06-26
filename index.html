@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="">
+        <nav class="bg-white p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="flex items-center gap-4 ">
+                    <div class="navbar-brand">
+                        <a href="#"><img src="./images/logo.png" alt="" width="80%" /></a>
+                    </div>
+
+                    <div class="hidden md:flex space-x-4">
+                        <a href="#" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Microsoft 365</a>
+                        <a href="#" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Teams</a>
+                        <a href="#copilot" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Copilot</a>
+                        <a href="#" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Windows</a>
+                        <a href="#" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Surface</a>
+                        <a href="#" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Xbox</a>
+                        <a href="#" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Deals</a>
+                        <a href="#" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Small bussiness</a>
+                        <a href="#" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Support</a>
+                    </div>
+
+                </div>
+
+                <div class="hidden md:flex space-x-4">
+                        <a href="#" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" ></a>
+                        <a href="#" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" ></a>
+
+                </div>
+
+
+                <div class="hidden md:flex space-x-4">
+                    <a href="#" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >All Microsoft</a>
+                    <a href="#" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Search <i class="bi bi-search text-gray-500 px-1"></i></a>
+                    <a href="#" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Cart <i class="bi bi-cart3 text-gray-500 px-1"></i></a>
+                    <a href="#" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Sign In <i class="bi bi-person-circle text-gray-400 px-1"></i></a>
+                </div>
+
+
+                <div class="md:hidden">
+                    <button id="menuButton" class="text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light  focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="md:hidden hidden">
+                <a href="#" class="block px-2 py-1 text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Home</a>
+                <a href="#" class="block px-2 py-1 text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >About</a>
+                <a href="#" class="block px-2 py-1 text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Services</a>
+                <a href="#" class="block px-2 py-1 text-gray-800 hover:text-gray-900 focus:text-gray-900 border-b-2 border-transparent hover:border-gray-800 font-light" >Contact</a>
+            </div>
+        </nav>
+
+        <div class="copilot" id="copilot">
+            <div class="container mx-auto flex justify-between items-center pt-20 pb-20">
+
+                <div class="max-w-2xl rounded overflow-hidden shadow-lg bg-white mb-20">
+                    <div class="px-10 pt-10 pb-20">
+                        <a href="#" class="bg-yellow-500 px-4 py-1 rounded-none">New</a>
+                        <div class="font-bold text-4xl mb-2 text-grey-800 font-semibold py-4">Meet Surface Pro</div>
+                        <p class="text-gray-800 text-normal">
+                            This laptop's unraveled flexibility and AI features like live Caption and co-creator enable you to do more than you can imagine
+                        </p>
+                        <div class="pt-7 pb-2">
+                            <a href="#" class="px-4 py-2 rounded-sm text-white font-bold" style="background-color: rgb(3, 100, 204);">Shop now</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- <div class="card">
+                    <button type="submit">New</button>
+                    <h1>Meet Surface Pro</h1>
+                    <p>Unlock AI feature like live Caption and co-creator with this exceptional powerful laptop</p>
+                    <button type="submit">Shop Now</button>
+                </div> -->
+                <!-- <img id="img-highlight-uid1ffc" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Laptop-AI-7Ed-Sapphire-MC001-3000x1682:VP2-859x540" class="card-img w-100" data-automation-test-id="HighlightImage-highlight-uid1ffc" alt="A Surface Laptop, 7th Edition, a Copilot+ PC, in the colour Sapphire."> -->
+            </div>
+        </div>
+
+
+        <div class="shop container mx-auto grid lg:grid-cols-6 md:grid-cols-2 py-20">
+            <div class="shop1 flex flex-col items-center">
+                <i class="bi bi-laptop text-4xl tex-gray-800 font-light"></i>
+                <a href="#">Shop for surface devices</a>
+            </div>
+            <div class="shop1 flex flex-col items-center">
+                <i class="bi bi-xbox text-4xl tex-gray-800 font-light"></i>
+                <a href="#">Shop Xbox game and console</a>
+            </div>
+            <div class="shop1 flex flex-col items-center">
+                <i class="bi bi-pc-display text-4xl tex-gray-800 font-light"></i>
+                <a href="#">Shop  your next PC</a>
+            </div>
+            <div class="shop1 flex flex-col items-center">
+                <i class="bi bi-microsoft text-4xl tex-gray-800 font-light"></i>
+                <a href="#">Shop your Microsoft365</a>
+            </div>
+            <div class="shop1 flex flex-col items-center">
+                <i class="bi bi-keyboard text-4xl tex-gray-800 font-light"></i>
+                <a href="#">Shop for accessories</a>
+            </div>
+            <div class="shop1 flex flex-col items-center">
+                <i class="bi bi-shop-window text-4xl tex-gray-800 font-light"></i>
+                <a href="#">Shop Bussiness</a>
+            </div>
+
+            
+        </div>
+
+
+        <div class="download container mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-7">
+            <div class="max-w-sm rounded overflow-hidden shadow bg-white">
+                <img class="w-full" src="./images/download1" alt="Download Copilot">
+                <div class="p-6 grid grid-rows-3 grid-flow-col gap-4">
+                    <div class="row-span-2">
+                        <div class="font-bold text-3xl text-grey-800 font-semibold pb-4">Unlock your potential with Microsoft Copilot</div>
+                        <p class="text-gray-800 text-normal">
+                            Get things done faster and unleash your creativity with the power of AI anywhere you go.                         </p>
+                    </div>
+
+                    <!-- <div class="grow"></div> -->
+
+                    <div class="row-span-1 content-end">
+                        <div class="pt-2 atext">
+                            <a href="#"></a>
+                        </div>
+                        <div class="pb-2">
+                            <a href="#" class="px-4 py-2 rounded-sm text-white font-bold" style="background-color: rgb(3, 100, 204);">Download the Copilot app</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="max-w-sm rounded overflow-hidden shadow bg-white">
+                <img class="w-full" src="./images/download2" alt="Download Copilot">
+                <div class="p-6 grid grid-rows-3 grid-flow-col gap-4">
+                    <div class="row-span-2">
+                        <div class="font-bold text-3xl text-grey-800 font-semibold pb-4">Maximise the everyday with Microsoft 365 </div>
+                        <p class="text-gray-800 text-normal">
+                            Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in one plan.                         </p>
+                    </div>
+
+                    <!-- <div class="grow"></div> -->
+
+                    <div class="row-span-1 content-end">
+                        <div class="pb-2">
+                            <a href="#" class="px-4 py-2 rounded-sm text-white font-bold" style="background-color: rgb(3, 100, 204);">For one person</a>
+                        </div>
+                        <div class="pt-2 atext">
+                            <a href="#">For up to six people <i class="bi bi-chevron-right px-2"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="max-w-sm rounded overflow-hidden shadow bg-white">
+                <img class="w-full" src="./images/download3" alt="Download Copilot">
+                <div class="p-6 grid grid-rows-3 grid-flow-col gap-4">
+                    <div class="row-span-2">
+                        <div class="font-bold text-3xl text-grey-800 font-semibold pb-4">Xbox Series X</div>
+                        <p class="text-gray-800 text-normal">
+                            The fastest, most powerful Xbox ever.                         </p>
+                    </div>
+
+                    <!-- <div class="grow"></div> -->
+
+                    <div class="row-span-1 content-end">
+                        <div class="pb-2">
+                            <a href="#" class="px-4 py-2 rounded-sm text-white font-bold" style="background-color: rgb(3, 100, 204);">Shop Xbox series X</a>
+                        </div>
+                        <div class="pt-2 atext">
+                            <a href="#">Shop all Xbox console <i class="bi bi-chevron-right px-2"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="max-w-sm rounded overflow-hidden shadow bg-white">
+                <img class="w-full" src="./images/download4" alt="Download Copilot">
+                <div class="p-6 grid grid-rows-3 grid-flow-col gap-4">
+                    <div class="row-span-2">
+                        <div class="font-bold text-3xl mb-2 text-grey-800 font-semibold b--4">Xbox Game Pass Ultimate</div>
+                        <p class="text-gray-800 text-normal">
+                            Play new games on day one. Plus, enjoy hundreds of high-quality games with friends on console and PC.                        
+                        </p>
+                    </div>
+
+                    <!-- <div class="grow"></div> -->
+
+                    <div class="row-span-1 content-end">
+                        <div class="pb-2">
+                            <a href="#" class="px-4 py-2 rounded-sm text-white font-bold" style="background-color: rgb(3, 100, 204);">Join now</a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto my-20">
+            <div class="x-box flex justify-between items-center pt-20 px-20">
+
+                <div class="max-w-2xl rounded overflow-hidden mb-20">
+                    <div class="px-10 pt-10 mt-20 pb-20">
+                        <div class="font-bold text-4xl mb-2 text-grey-800 font-semibold py-4">Xbox controllers </div>
+                        <p class="text-gray-800 text-normal">
+                            Elite, wireless, adaptive – find the controller that fits your style of play 
+                        </p>
+                        <div class="pt-7 pb-2 mb-20">
+                            <a href="#" class="px-4 py-2 rounded-sm text-white font-bold" style="background-color: rgb(3, 100, 204);">Shop now</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="download container mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-7">
+            <div class="max-w-sm rounded overflow-hidden shadow bg-white">
+                <img class="w-full" src="./images/download1" alt="Download Copilot">
+                <div class="p-6 grid grid-rows-3 grid-flow-col gap-4">
+                    <div class="row-span-2">
+                        <div class="font-bold text-3xl text-grey-800 font-semibold pb-4">Unlock your potential with Microsoft Copilot</div>
+                        <p class="text-gray-800 text-normal">
+                            Get things done faster and unleash your creativity with the power of AI anywhere you go.                         </p>
+                    </div>
+
+                    <!-- <div class="grow"></div> -->
+
+                    <div class="row-span-1 content-end">
+                        <div class="pt-2 atext">
+                            <a href="#"></a>
+                        </div>
+                        <div class="pb-2">
+                            <a href="#" class="px-4 py-2 rounded-sm text-white font-bold" style="background-color: rgb(3, 100, 204);">Download the Copilot app</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+</body>
+</html>

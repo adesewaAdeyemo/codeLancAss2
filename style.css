@@ -1,0 +1,38 @@
+body{
+  font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+  font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand{
+    border-right: 2px solid #000;
+    width: 150px
+}
+.copilot{
+    background-image: url(./images/surface.avif2);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+button.no-color{
+    background-color: rgb(3, 100, 204) !important;
+}
+.shop{
+    padding-left: 7% !important;
+    padding-right: 7% !important;
+}
+.shop a, .download .atext a{
+    color: rgb(3, 100, 204);
+    text-decoration: underline;
+}
+.shadow{
+    box-shadow: 0 .1875rem .4375rem 0 rgba(0,0,0,.13),0 .0625rem .125rem 0 rgba(0,0,0,.11);
+}
+.x-box{
+    background-image: url(./images/xbox.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
